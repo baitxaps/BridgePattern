@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		774A295D1D3A1DA200C1E1C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A295C1D3A1DA200C1E1C0 /* main.m */; };
+		774A29671D3A350700C1E1C0 /* RHCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A29661D3A350700C1E1C0 /* RHCClass.m */; };
+		774A296A1D3A37F600C1E1C0 /* RHCImplementClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A29691D3A37F600C1E1C0 /* RHCImplementClass.m */; };
+		774A296E1D3B28A000C1E1C0 /* RHCBridgeAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A296D1D3B28A000C1E1C0 /* RHCBridgeAClass.m */; };
+		774A29711D3B28B200C1E1C0 /* RHCBridegBCalss.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A29701D3B28B200C1E1C0 /* RHCBridegBCalss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		774A29591D3A1DA200C1E1C0 /* RHCProxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RHCProxy; sourceTree = BUILT_PRODUCTS_DIR; };
 		774A295C1D3A1DA200C1E1C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		774A29641D3A342C00C1E1C0 /* RHCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCProtocol.h; sourceTree = "<group>"; };
+		774A29651D3A350700C1E1C0 /* RHCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCClass.h; sourceTree = "<group>"; };
+		774A29661D3A350700C1E1C0 /* RHCClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCClass.m; sourceTree = "<group>"; };
+		774A29681D3A37F600C1E1C0 /* RHCImplementClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCImplementClass.h; sourceTree = "<group>"; };
+		774A29691D3A37F600C1E1C0 /* RHCImplementClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCImplementClass.m; sourceTree = "<group>"; };
+		774A296C1D3B28A000C1E1C0 /* RHCBridgeAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCBridgeAClass.h; sourceTree = "<group>"; };
+		774A296D1D3B28A000C1E1C0 /* RHCBridgeAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCBridgeAClass.m; sourceTree = "<group>"; };
+		774A296F1D3B28B200C1E1C0 /* RHCBridegBCalss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCBridegBCalss.h; sourceTree = "<group>"; };
+		774A29701D3B28B200C1E1C0 /* RHCBridegBCalss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCBridegBCalss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +70,34 @@
 		774A295B1D3A1DA200C1E1C0 /* RHCProxy */ = {
 			isa = PBXGroup;
 			children = (
+				774A296B1D3B285A00C1E1C0 /* Bridge */,
+				774A29631D3A33CB00C1E1C0 /* Delegate */,
 				774A295C1D3A1DA200C1E1C0 /* main.m */,
 			);
 			path = RHCProxy;
+			sourceTree = "<group>";
+		};
+		774A29631D3A33CB00C1E1C0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				774A29641D3A342C00C1E1C0 /* RHCProtocol.h */,
+				774A29651D3A350700C1E1C0 /* RHCClass.h */,
+				774A29661D3A350700C1E1C0 /* RHCClass.m */,
+				774A29681D3A37F600C1E1C0 /* RHCImplementClass.h */,
+				774A29691D3A37F600C1E1C0 /* RHCImplementClass.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		774A296B1D3B285A00C1E1C0 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				774A296C1D3B28A000C1E1C0 /* RHCBridgeAClass.h */,
+				774A296D1D3B28A000C1E1C0 /* RHCBridgeAClass.m */,
+				774A296F1D3B28B200C1E1C0 /* RHCBridegBCalss.h */,
+				774A29701D3B28B200C1E1C0 /* RHCBridegBCalss.m */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774A29711D3B28B200C1E1C0 /* RHCBridegBCalss.m in Sources */,
+				774A29671D3A350700C1E1C0 /* RHCClass.m in Sources */,
+				774A296E1D3B28A000C1E1C0 /* RHCBridgeAClass.m in Sources */,
 				774A295D1D3A1DA200C1E1C0 /* main.m in Sources */,
+				774A296A1D3A37F600C1E1C0 /* RHCImplementClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
