@@ -55,8 +55,8 @@
     [self.gamePlayer upgrade];
 }
 
-// 强制代理
-// 找到自己的代理
+
+// 代理的代理暂时还没有，就是自己
 - (id<IGamePlayer>)getProxy {
     
     return self;
