@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong)NSString *name;
 @property (nonatomic,strong)id <IGamePlayer> proxy;
+
 @end
 
 @implementation GamePlayer

@@ -39,7 +39,7 @@
 
 
 - (void)loginWtihUser:(NSString *)user password:(NSString *)pwd {
-  //  NSLog(@"user =%@ ,pwd = %@ login success...",user,pwd);
+//  NSLog(@"user =%@ ,pwd = %@ login success...",user,pwd);
     
     [self.gamePlayer loginWtihUser:user password:pwd];
 }
@@ -53,6 +53,8 @@
 - (void)upgrade {
 
     [self.gamePlayer upgrade];
+    
+    [self count];
 }
 
 
@@ -62,5 +64,10 @@
     return self;
 }
 
+
+// 计算费用
+- (void)count {
+    NSLog(@"升级费用:100元");
+}
 
 @end

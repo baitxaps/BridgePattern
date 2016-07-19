@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RHCProtocol.h"
 
-@interface GamePlayerProxy : NSObject<IGamePlayer>
+@interface GamePlayerProxy : NSObject<IGamePlayer,IProxy>
 
 - (instancetype)initWithName:(NSString *)name ;
 
