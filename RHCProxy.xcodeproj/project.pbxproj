@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580F3EFF1D3DF4A500F44A93 /* GamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F3EFE1D3DF4A500F44A93 /* GamePlayer.m */; };
+		580F3F031D3DF87600F44A93 /* GamePlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F3F021D3DF87600F44A93 /* GamePlayerProxy.m */; };
 		774A295D1D3A1DA200C1E1C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A295C1D3A1DA200C1E1C0 /* main.m */; };
 		774A29671D3A350700C1E1C0 /* RHCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A29661D3A350700C1E1C0 /* RHCClass.m */; };
 		774A296A1D3A37F600C1E1C0 /* RHCImplementClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A29691D3A37F600C1E1C0 /* RHCImplementClass.m */; };
@@ -27,6 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		580F3EFD1D3DF4A500F44A93 /* GamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayer.h; sourceTree = "<group>"; };
+		580F3EFE1D3DF4A500F44A93 /* GamePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayer.m; sourceTree = "<group>"; };
+		580F3F001D3DF84500F44A93 /* proxy02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy02.png; sourceTree = "<group>"; };
+		580F3F011D3DF87600F44A93 /* GamePlayerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayerProxy.h; sourceTree = "<group>"; };
+		580F3F021D3DF87600F44A93 /* GamePlayerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayerProxy.m; sourceTree = "<group>"; };
+		580F3F041D3DFE0300F44A93 /* proxy01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy01.png; sourceTree = "<group>"; };
+		580F3F051D3E080D00F44A93 /* proxy04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy04.png; sourceTree = "<group>"; };
+		580F3F061D3E18DA00F44A93 /* proxy03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy03.png; sourceTree = "<group>"; };
 		774A29591D3A1DA200C1E1C0 /* RHCProxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RHCProxy; sourceTree = BUILT_PRODUCTS_DIR; };
 		774A295C1D3A1DA200C1E1C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		774A29641D3A342C00C1E1C0 /* RHCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCProtocol.h; sourceTree = "<group>"; };
@@ -51,6 +61,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580F3EFC1D3DF3F500F44A93 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				580F3F041D3DFE0300F44A93 /* proxy01.png */,
+				580F3F001D3DF84500F44A93 /* proxy02.png */,
+				580F3F061D3E18DA00F44A93 /* proxy03.png */,
+				580F3F051D3E080D00F44A93 /* proxy04.png */,
+				580F3EFD1D3DF4A500F44A93 /* GamePlayer.h */,
+				580F3EFE1D3DF4A500F44A93 /* GamePlayer.m */,
+				580F3F011D3DF87600F44A93 /* GamePlayerProxy.h */,
+				580F3F021D3DF87600F44A93 /* GamePlayerProxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 		774A29501D3A1DA200C1E1C0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +95,7 @@
 		774A295B1D3A1DA200C1E1C0 /* RHCProxy */ = {
 			isa = PBXGroup;
 			children = (
+				580F3EFC1D3DF3F500F44A93 /* Proxy */,
 				774A296B1D3B285A00C1E1C0 /* Bridge */,
 				774A29631D3A33CB00C1E1C0 /* Delegate */,
 				774A295C1D3A1DA200C1E1C0 /* main.m */,
@@ -158,9 +184,11 @@
 			files = (
 				774A29711D3B28B200C1E1C0 /* RHCBridegBCalss.m in Sources */,
 				774A29671D3A350700C1E1C0 /* RHCClass.m in Sources */,
+				580F3EFF1D3DF4A500F44A93 /* GamePlayer.m in Sources */,
 				774A296E1D3B28A000C1E1C0 /* RHCBridgeAClass.m in Sources */,
 				774A295D1D3A1DA200C1E1C0 /* main.m in Sources */,
 				774A296A1D3A37F600C1E1C0 /* RHCImplementClass.m in Sources */,
+				580F3F031D3DF87600F44A93 /* GamePlayerProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +309,7 @@
 				774A29621D3A1DA200C1E1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

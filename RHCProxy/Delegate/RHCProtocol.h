@@ -17,3 +17,15 @@
 @end
 
 
+@protocol IGamePlayer <NSObject>
+- (void)loginWtihUser:(NSString *)user password:(NSString *)pwd;
+
+- (void) killBoss;
+
+- (void)upgrade;
+
+// 强制代理
+// 找到自己的代理
+- (id<IGamePlayer>) getProxy;
+
+@end
